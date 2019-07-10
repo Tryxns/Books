@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "test": "mocha"
+    "test": "nyc --reporter=text mocha"
   },
   "dependencies": {
     "chai": "^4.2.0",
@@ -18,5 +18,8 @@
     "mysql": "^2.17.1",
     "sinon": "^7.3.2",
     "constantinople": ">=3.1.1"
+  },
+  "devDependencies": {
+    "nyc": "^14.1.1"
   }
 }
